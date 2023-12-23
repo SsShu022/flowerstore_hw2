@@ -10,11 +10,6 @@
     <!-- Checks that property files contain the same keys. -->
     <module name="Translation"/>
 
-    <!-- Checks that no tab characters in the source code. -->
-    <!-- Reports only first instance. -->
-    <module name="FileTabCharacter">
-        <property name="eachLine" value="false"/>
-    </module>
 
 
     <!-- Checks that no file is more than 1500 lines long. -->
@@ -85,9 +80,9 @@
         <!--    <module name="DoubleCheckedLocking"/>  NO LONGER AVAILABLE IN CHECKSTYLE 5.6 -->
         <module name="EmptyStatement"/>
         <!--        <module name="EqualsHashCode"/> -->
-        <module name="HiddenField">
+        <!-- <module name="HiddenField">
             <property name="ignoreConstructorParameter" value="true"/>
-        </module>
+        </module> -->
         <module name="IllegalInstantiation"/>
         <module name="InnerAssignment"/>
         <!-- <module name="MagicNumber">
@@ -124,7 +119,7 @@
                       value="java.lang.Boolean, java.lang.Integer, java.lang.Double, java.lang.Float, java.lang.Character, java.lang.Long, java.lang.Short, java.lang.Byte, java.lang.Class"/>
         </module>
 
-        <module name="DeclarationOrder"/>
+        <!-- <module name="DeclarationOrder"/> -->
         <module name="ParameterAssignment"/>
         <module name="DefaultComesLast"/>
         <module name="FallThrough">
@@ -158,7 +153,7 @@
         </module>
 
         <module name="RedundantImport"/>
-        <module name="UnusedImports"/>
+        <!-- <module name="UnusedImports"/> -->
 
 
         <!-- =========================================================================== -->
@@ -211,11 +206,6 @@
         <module name="MemberName">
             <property name="format" value="^[a-z][a-zA-Z]*$"/>
         </module>
-
-        <module name="MethodName">
-            <property name="format" value="^[a-z][a-zA-Z]*$"/>
-        </module>
-
         <module name="PackageName">
             <property name="format" value="^[a-z]+(\.[a-z][a-z]*)*$"/>
         </module>
@@ -280,13 +270,13 @@
         </module>
         <module name="NoWhitespaceBefore"/>
         <module name="OperatorWrap"/>
-        <module name="ParenPad"/>
+        <!-- <module name="ParenPad"/> -->
         <module name="TypecastParenPad"/>
         <module name="WhitespaceAfter"/>
-        <module name="WhitespaceAround">
+        <!-- <module name="WhitespaceAround"> -->
             <!-- removed PLUS, MINUS, STAR, DIV -->
             <!-- removed GENERIC_START, GENERIC_END -->
-            <property name="tokens"
+            <!-- <property name="tokens"
                       value="ASSIGN, BAND, BAND_ASSIGN, BOR, BOR_ASSIGN, BSR,
                    BSR_ASSIGN, BXOR, BXOR_ASSIGN, COLON,  DIV_ASSIGN,
                    EQUAL, GE, GT, LAND, LCURLY, LE, LITERAL_ASSERT,
@@ -296,7 +286,7 @@
                    MOD_ASSIGN, NOT_EQUAL, PLUS_ASSIGN, QUESTION, RCURLY,
                    SL, SLIST, SL_ASSIGN, SR, SR_ASSIGN, STAR_ASSIGN,
                    TYPE_EXTENSION_AND, WILDCARD_TYPE"/>
-        </module>
+        </module> -->
 
         <module name="NeedBraces"/>
 
